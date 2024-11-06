@@ -1,0 +1,271 @@
+/* Reset some default styles */
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(rgba(1,10,30,0.5),rgba(1,10,30,0.5)),url(/assets/images/background.gif);
+    background-size: cover;
+    background-position: center;
+}
+
+/* The solar system container */
+.solar-system{
+    position: relative;
+    width: 500px;
+    height: 500px;
+}
+
+/* The Sun */
+.sun{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 100px 50px rgba(255, 204, 0, 0.6);
+}
+
+/* General planet styles */
+.planet{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: center;
+    animation-timing-function: linear;
+}
+
+.planet .mercury{
+    width: 10px;
+    height: 10px;
+    animation: merAnim 1s linear infinite;
+}
+.planet .venus{
+    width: 15px;
+    height: 15px;
+    animation: venAnim 1s linear infinite;
+}
+.planet .earth{
+    width: 20px;
+    height: 20px;
+    animation: earAnim 1s linear infinite;
+}
+.planet .mars{
+    width: 30px;
+    height: 30px;
+    animation: marAnim 1s linear infinite;
+}
+.planet .jupiter{
+    width: 50px;
+    height: 50px;
+    animation: jupAnim 1s linear infinite;
+}
+.planet .saturn{
+    width: 45px;
+    height: 45px;
+    animation: satAnim 1s linear infinite;
+}
+.planet .uranus{
+    width: 40px;
+    height: 40px;
+    animation: uraAnim 1s linear infinite;
+}
+.planet .neptune{
+    width: 35px;
+    height: 35px;
+    animation: nepAnim 1s linear infinite;
+}
+@keyframes nepAnim{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+@keyframes uraAnim{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+@keyframes satAnim{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+@keyframes jupAnim{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+@keyframes marAnim{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+@keyframes earAnim{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+@keyframes venAnim{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+@keyframes merAnim{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+/* Orbit Animations */
+.orbit-1{
+    animation: orbit1 5s infinite;
+}
+.orbit-2 {
+    animation: orbit2 10s infinite;
+}
+.orbit-3 {
+    animation: orbit3 15s infinite;
+}
+.orbit-4 {
+    animation: orbit4 20s infinite;
+}
+.orbit-5 {
+    animation: orbit5 25s infinite;
+}
+.orbit-6 {
+    animation: orbit6 30s infinite;
+}
+.orbit-7 {
+    animation: orbit7 35s infinite;
+}
+.orbit-8 {
+    animation: orbit8 40s infinite;
+}
+
+/* Define the orbits' paths */
+@keyframes orbit1 {
+    0%{
+        transform: rotate(0deg) translateX(100px);
+    }
+    100%{
+        transform: rotate(360deg) translateX(100px);
+    }
+}
+
+@keyframes orbit2{
+    0%{
+        transform: rotate(0deg) translateX(150px);
+    }
+    100%{
+        transform: rotate(360deg) translateX(150px);
+    }
+}
+
+@keyframes orbit3{
+    0%{
+        transform: rotate(0deg) translateX(200px);
+    }
+    100%{
+        transform: rotate(360deg) translateX(200px);
+    }
+}
+
+@keyframes orbit4{
+    0%{
+        transform: rotate(0deg) translateX(250px);
+    }
+    100%{
+        transform: rotate(360deg) translateX(250px);
+    }
+}
+
+@keyframes orbit5{
+    0%{
+        transform: rotate(0deg) translateX(300px);
+    }
+    100%{
+        transform: rotate(360deg) translateX(300px);
+    }
+}
+
+@keyframes orbit6{
+    0%{
+        transform: rotate(0deg) translateX(350px);
+    }
+    100%{
+        transform: rotate(360deg) translateX(350px);
+    }
+}
+
+@keyframes orbit7{
+    0%{
+        transform: rotate(0deg) translateX(400px);
+    }
+    100%{
+        transform: rotate(360deg) translateX(400px);
+    }
+}
+
+@keyframes orbit8{
+    0%{
+        transform: rotate(0deg) translateX(450px);
+    }
+    100%{
+        transform: rotate(360deg) translateX(450px);
+    }
+}
+/* ========== Footer Credit ========== */
+footer{
+    font-size: 30px;
+    color: #fff;
+    opacity: .5;
+    font-weight: 100;
+    text-align: center;
+}
+footer a{
+    font-weight: 900 !important;
+    color: #fff;
+    display: block;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+.fa-heart{
+    color: #ff0000;
+}
